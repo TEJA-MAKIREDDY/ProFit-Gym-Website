@@ -1,2 +1,19 @@
-# ProFit-Gym-Website
-Designed and developed a responsive single-page website for ProFit Gym, aimed at enhancing customer engagement and streamlining gym membership registration. The website features a professional design with a modern UI, a clear navigation structure, and a user-friendly registration form.
+# ProFit Gym Website
+
+This is a responsive single-page website for a gym named "ProFit Gym." It includes:
+- A navigation menu.
+- A visually appealing header section.
+- A registration form with proper validation.
+
+## Features
+- Clean and responsive design.
+- Registration form for potential clients.
+- Easy-to-navigate structure.
+
+## Technologies Used
+- HTML5
+- CSS3
+
+## How to Run
+- Download or clone the repository.
+- Open `ProFit_Gym_website.html` in any browser.
