@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProFit Gym</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('gym-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 80px;
+            filter: invert(100%);
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            text-decoration: underline;
+            color: lightgray;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        /* Form Container Styling */
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid white;
+            margin: 100px auto;
+            padding: 40px;
+            width: 40%;
+            border-radius: 15px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            font-size: 16px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="gym-logo.png" alt="ProFit Gym Logo">
+            <span>ProFit Gym</span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header Buttons -->
+        <div>
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <!-- Registration Form -->
+    <div class="form-container">
+        <h1>Register for ProFit Gym</h1>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" placeholder="Enter your Age" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="gender" placeholder="Enter your Gender" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="locality" placeholder="Enter your Locality" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Enter your Phone Number" required>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
